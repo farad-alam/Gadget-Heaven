@@ -10,3 +10,10 @@
   font-style: normal;
   font-size: 16px;
 }
+
+.categories-link{
+  @apply bg-base-200 rounded-3xl
+}
+.card-btn{
+  @apply px-4 py-2 rounded-3xl ring-1 font-bold ring-purple-600 text-purple-600
+}
