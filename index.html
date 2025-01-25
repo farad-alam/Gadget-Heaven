@@ -4,16 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gadget Heaven</title>
-    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header>
-      <nav></nav>
-      <section id="banar"></section>
+  <body class="sora-normal bg-base-100">
+    <header
+      class="w-[95%] max-h-fit pb-52 mt-4 mx-auto rounded-xl px-16 bg-purple-600 text-white"
+    >
+      <nav id="My-Nav" class="navbar">
+        <div class="navbar-start">
+          <div id="my-drop-down-menu" class="dropdown lg:hidden">
+            <h3 tabindex="0" role="button" class="btn btn-ghost">menus=</h3>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-slate-100 text-zinc-900 h-fit w-52 p-4 rounded-lg shadow-sm"
+            >
+              <li><a href="">item 1</a></li>
+              <li><a href="">item 2</a></li>
+            </ul>
+          </div>
+          <h1 class="text-2xl font-bold btn btn-ghost">
+            <a href="#">Gadget Heaven</a>
+          </h1>
+        </div>
+        <div class="navbar-center">
+          <ul class="menu menu-horizontal hidden lg:flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Statics</a></li>
+            <li><a href="#">Dashbord</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end space-x-4">
+          <div id="cart" class="btn btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+          </div>
+          <div id="heart" class="btn btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-heart"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <section id="banar">
+        <div class="hero-content text-center">
+          <div class="w-9/12 space-y-6">
+            <h1 class="text-5xl font-bold leading-snug">
+              Upgrade Your Tech Accessorize with Gadget Heaven Accessories
+            </h1>
+            <p class="">
+              Explore the latest gadgets that will take your experience to the
+              next level. From smart devices to the coolest accessories, we have
+              it all!
+            </p>
+            <button class="btn btn-base-100 rounded-3xl">Shop Now</button>
+          </div>
+        </div>
+      </section>
     </header>
-    <main>
-        
-    </main>
+    <section
+      id="banar-image-sec"
+      class="absolute top-96 left-10 w-[95%] h-[600px] mx-auto"
+    >
+      <div
+        id="banar-img"
+        class="my-16 w-8/12 h-4/5 mx-auto ring-[20px] bg-transparent rounded-3xl"
+      >
+        <img
+          class="rounded-3xl w-full h-full object-cover"
+          src="./assets/banner.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+    <main></main>
     <footer></footer>
   </body>
 </html>
