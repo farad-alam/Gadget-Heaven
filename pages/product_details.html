@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gadget Heaven</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sora bg-base-200 static text-[16px]">
+    <header>
+      <div id="header-context" class="w-4/5 mx-auto">
+        <nav id="My-Nav" class="navbar">
+          <div class="navbar-start">
+            <div id="my-drop-down-menu" class="dropdown lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-slate-100 text-zinc-900 h-fit w-52 p-4 rounded-lg shadow-sm"
+              >
+                <li><a href="">item 1</a></li>
+                <li><a href="">item 2</a></li>
+              </ul>
+            </div>
+            <h1 class="text-xl md:text-2xl font-bold btn btn-ghost">
+              <a href="#">Gadget Heaven</a>
+            </h1>
+          </div>
+          <div class="navbar-center">
+            <ul class="menu menu-horizontal hidden lg:flex">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Statics</a></li>
+              <li><a href="#">Dashbord</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-4">
+            <div
+              id="cart"
+              class="hidden md:inline-flex btn btn-circle bg-base-100 shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <div
+              id="heart"
+              class="hidden md:inline-flex btn btn-circle bg-base-100 shadow-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-heart"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                />
+              </svg>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="relative">
+      <div id="product-details-context">
+        <!-- Product BG Banar -->
+        <div
+          id="product-bg-banar"
+          class="w-full h-80 bg-purple-600 text-base-100 flex flex-col gap-6 items-center pt-12"
+        >
+          <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+            Product Details
+          </h1>
+          <p class="w-3/5 mx-auto text-center">
+            Explore the latest gadgets that will take your experience to the
+            next level. From smart devices to the coolest accessories, we have
+            it all!
+          </p>
+        </div>
+        <!-- Product Details Card -->
+        <div
+          id="product-card"
+          class="relative -top-24 md:-top-32 w-4/5 mx-auto bg-base-100 rounded-2xl shadow-xl"
+        >
+          <!-- product card-context -->
+          <div class="grid grid-cols-1 md:grid-cols-[1.5fr_2fr] items-center p-8 gap-6">
+            <!-- product img -->
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/I/71nllewIU9L._AC_SL1500_.jpg"
+                alt=""
+              />
+            </div>
+            <!-- Product Details with prices -->
+            <div class="flex flex-col gap-4 items-start">
+              <h1 class="text-lg font-bold md:text-xl">
+                Apple MacBook Air with M3 chip: 13.6-inch Liquid Retina Display, 16GB
+                Unified Memory, 256GB SSD Storage
+              </h1>
+              <h3>Price: $999.90</h3>
+              <div>in stock</div>
+              <!-- sort description -->
+               <p>BUILT FOR APPLE INTELLIGENCE—Apple Intelligence is the personal intelligence system that helps you write, express yourself, and get things done effortlessly.</p>
+              <!-- Spacification -->
+               <div>
+                <h2>Specification:</h2>
+                <ol >
+                    <li>10-core GPU</li>
+                    <li>100GB/s memory bandwidth </li>
+                    <li>Video decode engine</li>
+                    <li>16GB unified memory</li>
+                    <li>Up to 15 hours wireless web</li>
+                </ol>
+               </div>
+               <!-- rating -->
+                <div class="rating">Rating</div>
+                <!-- button -->
+                 <button class="btn bg-purple-600">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <footer class="footer p-10 bg-accent text-neutral-content">
+        <nav>
+          <header class="footer-title">Services</header>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Company</header>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <header class="footer-title">Legal</header>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
+    </footer>
+  </body>
+</html>

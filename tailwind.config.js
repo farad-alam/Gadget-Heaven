@@ -1,9 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: ["./*.html"],
+  content: ["./*.html", "./pages/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sora: ["Sora", "serif"],
+      },
+    },
   },
   plugins: [require("daisyui")],
-  
 };
