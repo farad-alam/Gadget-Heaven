@@ -121,14 +121,14 @@
         />
       </div>
     </section>
-    <main data-theme="mytheme" class="relative w-full top-[450px] bg-base-200 pb-52">
+    <main data-theme="mytheme" class="relative w-full -top-[250px] md:top-[300px] lg:top-[450px] bg-base-200 pb-52">
       <section id="disply-products-sec" class="w-9/12 mx-auto">
         <h1 class="text-4xl font-bold text-center mb-16">
           Explore Cutting-Edge Gadgets
         </h1>
-        <section id="categories-and-products" class="flex gap-3">
-          <aside class="w-6/12">
-            <ul class="bg-white menu rounded-xl space-y-4 shadow-sm">
+        <section id="categories-and-products" class="flex flex-col lg:flex-row gap-3">
+          <aside class=" w-full lg:w-6/12">
+            <ul class="bg-white menu menu-horizontal lg:menu-vertical  items-center lg:items-start justify-around lg:justify-start rounded-xl space-y-4 shadow-sm">
               <li class="bg-purple-600 text-base-100 rounded-3xl">
                 <a href="">All Products</a>
               </li>
@@ -144,7 +144,7 @@
           </aside>
           <section
             id="all-products"
-            class="grid grid-cols-3 auto-rows-[350px] gap-4"
+            class="grid grid-cols-2 md:grid-cols-3 auto-rows-[350px] gap-4"
           >
             <div class="card bg-base-100 shadow-sm">
               <figure class="w-full h-4/5">
@@ -158,7 +158,7 @@
                 <h2 class="card-title">Dell XPS 13</h2>
                 <p class="font-bold text-zinc-500">Price: $89.99</p>
                 <div class="card-actions justify-start">
-                  <button class="card-btn">View Details</button>
+                  <button class="card-btn-sm md:card-btn ">View Details</button>
                 </div>
               </div>
             </div>
