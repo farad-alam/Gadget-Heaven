@@ -2,13 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.categories-link {
+  @apply bg-base-200 rounded-3xl;
+}
+.card-btn {
+  @apply px-4 py-2 rounded-3xl ring-1 font-bold ring-purple-600 text-purple-600;
+}
+.card-btn-sm {
+  @apply border-2 border-purple-500 rounded-3xl;
+}
 
-.categories-link{
-  @apply bg-base-200 rounded-3xl
+.c-btn {
+  @apply px-4 py-2 bg-purple-600 text-white rounded-3xl;
 }
-.card-btn{
-  @apply px-4 py-2 rounded-3xl ring-1 font-bold ring-purple-600 text-purple-600
+.c-btn:hover {
+  @apply bg-transparent text-purple-800 ring-1 ring-purple-800;
 }
-.card-btn-sm{
-  @apply border-2 border-purple-500 rounded-3xl
+
+.c-btn-outlined {
+  @apply px-4 py-[7px] bg-transparent text-purple-800 ring-1 ring-purple-800 rounded-3xl;
+}
+.c-btn-outlined:hover{
+  @apply bg-purple-600 text-white
 }
