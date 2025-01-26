@@ -121,7 +121,9 @@
           class="relative -top-24 md:-top-32 w-4/5 mx-auto bg-base-100 rounded-2xl shadow-xl"
         >
           <!-- product card-context -->
-          <div class="grid grid-cols-1 md:grid-cols-[1.5fr_2fr] items-center p-8 gap-6">
+          <div
+            class="grid grid-cols-1 md:grid-cols-[1.5fr_2fr] items-center p-8 gap-6"
+          >
             <!-- product img -->
             <div>
               <img
@@ -132,28 +134,108 @@
             <!-- Product Details with prices -->
             <div class="flex flex-col gap-4 items-start">
               <h1 class="text-lg font-bold md:text-xl">
-                Apple MacBook Air with M3 chip: 13.6-inch Liquid Retina Display, 16GB
-                Unified Memory, 256GB SSD Storage
+                Apple MacBook Air with M3 chip: 13.6-inch Liquid Retina Display,
+                16GB Unified Memory, 256GB SSD Storage
               </h1>
-              <h3>Price: $999.90</h3>
-              <div>in stock</div>
+              <h3 class="text-lg font-bold text-gray-500">Price: $999.90</h3>
+              <div class="badge badge-success badge-outline">in stock</div>
               <!-- sort description -->
-               <p>BUILT FOR APPLE INTELLIGENCE—Apple Intelligence is the personal intelligence system that helps you write, express yourself, and get things done effortlessly.</p>
+              <p class="text-gray-500">
+                BUILT FOR APPLE INTELLIGENCE—Apple Intelligence is the personal
+                intelligence system that helps you write, express yourself, and
+                get things done effortlessly.
+              </p>
               <!-- Spacification -->
-               <div>
-                <h2>Specification:</h2>
-                <ol >
-                    <li>10-core GPU</li>
-                    <li>100GB/s memory bandwidth </li>
-                    <li>Video decode engine</li>
-                    <li>16GB unified memory</li>
-                    <li>Up to 15 hours wireless web</li>
+              <div class="">
+                <h2 class="text-lg font-bold pb-4">Specification:</h2>
+                <ol class="list-decimal flex flex-col gap-1 relative left-4">
+                  <li>10-core GPU</li>
+                  <li>100GB/s memory bandwidth</li>
+                  <li>Video decode engine</li>
+                  <li>16GB unified memory</li>
+                  <li>Up to 15 hours wireless web</li>
                 </ol>
-               </div>
-               <!-- rating -->
-                <div class="rating">Rating</div>
-                <!-- button -->
-                 <button class="btn bg-purple-600">Add to Cart</button>
+              </div>
+              <!-- rating -->
+              <div class=" space-y-2">
+                <h3 class="font-bold">Rating</h3>
+                <div class="flex gap-4 items-center">
+                  <div id="5star">
+                    <div class="rating">
+                      <input
+                        type="radio"
+                        name="rating-4"
+                        class="mask mask-star-2 bg-orange-500"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-4"
+                        class="mask mask-star-2 bg-orange-500"
+                        checked="checked"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-4"
+                        class="mask mask-star-2 bg-orange-500"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-4"
+                        class="mask mask-star-2 bg-orange-500"
+                      />
+                      <input
+                        type="radio"
+                        name="rating-4"
+                        class="mask mask-star-2 bg-orange-500"
+                      />
+                    </div>
+                  </div>
+                  <div id="rating-point" class="bg-base-200 rounded-2xl px-3">
+                    4.8
+                  </div>
+                </div>
+              </div>
+              <!-- Actions -->
+              <div id="actions" class="flex gap-4 items-center">
+                <button class="btn bg-purple-600 rounded-3xl hover:bg-purple-700 text-base-100">
+                  Add to Cart
+                  <div id="cart" class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </div>
+                </button>
+                <div id="heart" class="btn btn-circle ring-1 ring-gray-500 shadow shadow-sm">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-heart"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
